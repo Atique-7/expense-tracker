@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import uniqid from "uniqid";
 import { useSelector, useDispatch } from "react-redux";
 import { DeleteIcon } from "@chakra-ui/icons";

@@ -8,8 +8,9 @@ export const reducer = (state, action) => {
       return [...state, newData];
     case DELETE_EXPENSE:
       const newStore = state.filter((expenseObj) => {
-        if (expenseObj.id !== action.id) return expenseObj;
+        if(expenseObj.id !== action.id) return expenseObj;
       });
+      console.log(newStore)
       return newStore;
     default:
       return state;
